@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Office Cleaning Services | S&amp;B Facility Solutions</title>
+<meta name="description" content="Recurring and one-time office cleaning from S&B Facility Solutions, with facility supply restocking and property care available under the same account." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<style>
+  :root{
+    --paper:#F7F5FB; --white:#FFFFFF; --ink:#1E1A2E; --violet:#6C2BD9; --violet-deep:#3B1768;
+    --violet-pale:#EFE8FB; --gold:#C7952F; --slate:#5B5470; --line:#E3DEF0;
+    --display:'Sora',sans-serif; --body:'Inter',sans-serif; --mono:'IBM Plex Mono',monospace;
+  }
+  *{box-sizing:border-box;}
+  html{scroll-behavior:smooth;}
+  body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--body);}
+  a{color:inherit;}
+  .wrap{max-width:1240px;margin:0 auto;padding:0 24px;}
+  .skip-link{position:absolute;left:-999px;top:0;background:var(--ink);color:#fff;padding:12px 18px;z-index:200;}
+  .skip-link:focus{left:12px;top:12px;}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--violet);outline-offset:2px;}
+
+  .eyebrow{font-family:var(--mono);font-weight:600;font-size:12px;letter-spacing:.12em;text-transform:uppercase;color:var(--violet);margin:0 0 14px;display:flex;align-items:center;gap:10px;}
+  .eyebrow::before{content:"";width:22px;height:2px;background:var(--gold);display:inline-block;}
+  .h2{font-family:var(--display);font-weight:700;font-size:clamp(28px,3.6vw,42px);line-height:1.15;letter-spacing:-.01em;margin:0 0 16px;color:var(--ink);}
+  .ph{position:relative;border-radius:14px;border:1.5px dashed #C9BEE6;background:repeating-linear-gradient(135deg, var(--violet-pale) 0px, var(--violet-pale) 10px, #F2EDFA 10px, #F2EDFA 20px);display:flex;align-items:center;justify-content:center;text-align:center;overflow:hidden;}
+  .ph span{font-family:var(--mono);font-size:11.5px;letter-spacing:.05em;color:var(--violet-deep);background:rgba(255,255,255,.75);padding:8px 14px;border-radius:999px;max-width:80%;}
+
+  header.site{position:sticky;top:0;z-index:50;background:rgba(247,245,251,.92);backdrop-filter:blur(10px);border-bottom:1px solid var(--line);}
+  .nav-row{display:flex;align-items:center;justify-content:space-between;padding:16px 24px;}
+  .brand{display:flex;align-items:center;gap:10px;text-decoration:none;}
+  .brand .mark{width:38px;height:38px;border-radius:9px;background:linear-gradient(150deg,var(--violet) 0%,var(--violet-deep) 100%);display:flex;align-items:center;justify-content:center;color:#fff;font-family:var(--display);font-weight:800;font-size:15px;flex-shrink:0;}
+  .brand .word{font-family:var(--display);font-weight:800;font-size:17px;color:var(--ink);line-height:1.15;}
+  .brand .word small{display:block;font-family:var(--body);font-weight:600;font-size:10.5px;letter-spacing:.1em;text-transform:uppercase;color:var(--slate);}
+  nav.links{display:none;}
+  nav.links a{font-family:var(--body);font-weight:600;font-size:14.5px;color:var(--ink);text-decoration:none;margin-left:26px;position:relative;padding:6px 0;}
+  nav.links a.active{color:var(--violet-deep);}
+  nav.links a::after{content:"";position:absolute;left:0;right:100%;bottom:0;height:2px;background:var(--gold);transition:right .28s cubic-bezier(.4,0,.2,1);}
+  nav.links a:hover::after,nav.links a.active::after{right:0;}
+  .nav-actions{display:flex;align-items:center;gap:12px;}
+  .phone-link{display:none;font-family:var(--mono);font-weight:600;font-size:13.5px;color:var(--ink);text-decoration:none;}
+  .btn-primary{font-family:var(--body);font-weight:700;font-size:14px;color:#fff;background:var(--violet);padding:11px 22px;border-radius:8px;text-decoration:none;white-space:nowrap;transition:background .2s,transform .2s;display:inline-block;}
+  .btn-primary:hover{background:var(--violet-deep);transform:translateY(-1px);}
+  .btn-ghost{font-family:var(--body);font-weight:700;font-size:14px;color:var(--ink);background:transparent;border:1.5px solid var(--ink);padding:9.5px 20px;border-radius:8px;text-decoration:none;white-space:nowrap;transition:background .2s,color .2s;display:inline-block;}
+  .btn-ghost:hover{background:var(--ink);color:#fff;}
+  .menu-toggle{display:flex;background:var(--white);border:1px solid var(--line);border-radius:8px;width:38px;height:38px;align-items:center;justify-content:center;cursor:pointer;}
+  .mobile-menu{display:none;background:var(--white);border-top:1px solid var(--line);padding:8px 24px 20px;}
+  .mobile-menu a{display:block;font-family:var(--body);font-weight:600;font-size:16px;color:var(--ink);text-decoration:none;padding:12px 0;border-bottom:1px solid var(--line);}
+  .mobile-menu.open{display:block;}
+  @media(min-width:960px){nav.links{display:flex;align-items:center;}.menu-toggle{display:none;}.phone-link{display:block;}}
+
+  .reveal{opacity:0;transform:translateY(18px);transition:opacity .7s cubic-bezier(.4,0,.2,1), transform .7s cubic-bezier(.4,0,.2,1);}
+  .reveal.in{opacity:1;transform:translateY(0);}
+
+  /* Hero */
+  .hero{padding:56px 24px 0;}
+  .hero-grid{max-width:1240px;margin:0 auto;display:grid;grid-template-columns:1.1fr .9fr;gap:48px;align-items:center;}
+  h1{font-family:var(--display);font-weight:800;font-size:clamp(34px,4.4vw,50px);line-height:1.1;letter-spacing:-.015em;color:var(--ink);margin:0 0 20px;}
+  .hero-copy p.lede{font-size:17px;line-height:1.65;color:var(--slate);margin:0 0 28px;max-width:480px;}
+  .cta-row{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:30px;}
+  .trust-strip{display:flex;flex-wrap:wrap;gap:10px 22px;}
+  .trust-strip span{font-family:var(--body);font-weight:600;font-size:13px;color:var(--ink);display:flex;align-items:center;gap:7px;}
+  .trust-strip span::before{content:"✓";color:var(--violet);font-weight:800;}
+  .hero-photo{aspect-ratio:4/5;}
+  @media(max-width:899px){.hero-grid{grid-template-columns:1fr;}.hero-photo{aspect-ratio:16/9;margin-top:16px;}}
+
+  /* Intro */
+  .intro{background:var(--white);padding:88px 24px;border-top:1px solid var(--line);}
+  .intro-grid{display:grid;grid-template-columns:1fr 1fr;gap:52px;align-items:center;}
+  .intro-copy p{font-family:var(--body);font-size:15.5px;line-height:1.7;color:var(--slate);margin:0 0 18px;}
+  .intro-copy ul{list-style:none;margin:22px 0 0;padding:0;display:flex;flex-direction:column;gap:12px;}
+  .intro-copy li{font-family:var(--body);font-size:14.5px;color:var(--ink);display:flex;gap:10px;}
+  .intro-copy li::before{content:"✓";color:var(--violet);font-weight:800;flex-shrink:0;}
+  .intro-photo{aspect-ratio:4/3;}
+  @media(max-width:899px){.intro-grid{grid-template-columns:1fr;}.intro-photo{order:-1;}}
+
+  /* What's included */
+  .included{background:var(--paper);padding:88px 24px;}
+  .section-head{max-width:680px;margin:0 0 48px;}
+  .included-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;}
+  .included-card{background:var(--white);border:1px solid var(--line);border-radius:16px;padding:28px 26px;}
+  .included-card .num{font-family:var(--mono);font-weight:600;font-size:13px;color:var(--gold);display:block;margin-bottom:10px;}
+  .included-card h3{font-family:var(--display);font-weight:700;font-size:19px;color:var(--ink);margin:0 0 14px;}
+  .included-card ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:9px;}
+  .included-card li{font-family:var(--body);font-size:13.5px;line-height:1.5;color:var(--slate);display:flex;gap:9px;}
+  .included-card li::before{content:"–";color:var(--violet);flex-shrink:0;}
+  @media(max-width:899px){.included-grid{grid-template-columns:1fr;}}
+
+  /* Bundle callout */
+  .bundle{background:var(--ink);border-radius:24px;padding:40px 36px;margin-top:36px;display:grid;grid-template-columns:auto 1fr auto;gap:26px;align-items:center;}
+  .bundle .icon{width:52px;height:52px;border-radius:12px;background:linear-gradient(150deg,var(--violet) 0%,var(--violet-deep) 100%);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+  .bundle .icon svg{width:26px;height:26px;stroke:#fff;}
+  .bundle h3{font-family:var(--display);font-weight:700;font-size:19px;color:#fff;margin:0 0 6px;}
+  .bundle p{font-family:var(--body);font-size:14px;color:#C9C1DD;margin:0;}
+  @media(max-width:699px){.bundle{grid-template-columns:1fr;text-align:center;}.bundle .icon{margin:0 auto;}}
+
+  /* Frequency options */
+  .frequency{background:var(--white);padding:88px 24px;border-top:1px solid var(--line);}
+  .freq-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:20px;}
+  .freq-card{border:1px solid var(--line);border-radius:14px;padding:24px 22px;transition:border-color .2s,transform .2s;}
+  .freq-card:hover{border-color:var(--violet);transform:translateY(-3px);}
+  .freq-card h4{font-family:var(--display);font-weight:700;font-size:16px;color:var(--ink);margin:0 0 8px;}
+  .freq-card p{font-family:var(--body);font-size:13.5px;line-height:1.55;color:var(--slate);margin:0;}
+  @media(max-width:899px){.freq-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:599px){.freq-grid{grid-template-columns:1fr;}}
+
+  /* Workplaces served */
+  .served{background:var(--paper);padding:88px 24px;}
+  .served-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1px;background:var(--line);border:1px solid var(--line);border-radius:16px;overflow:hidden;}
+  .served-item{background:var(--white);padding:26px 24px;}
+  .served-item h4{font-family:var(--display);font-weight:700;font-size:15.5px;color:var(--ink);margin:0 0 8px;}
+  .served-item p{font-family:var(--body);font-size:13px;line-height:1.55;color:var(--slate);margin:0;}
+  @media(max-width:899px){.served-grid{grid-template-columns:1fr;}}
+
+  /* Process */
+  .process{background:var(--white);padding:88px 24px;border-top:1px solid var(--line);}
+  .process-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:24px;}
+  .step .num{font-family:var(--mono);font-weight:600;font-size:13px;color:var(--gold);display:block;margin-bottom:10px;}
+  .step h4{font-family:var(--display);font-weight:700;font-size:16.5px;color:var(--ink);margin:0 0 8px;}
+  .step p{font-family:var(--body);font-size:13.5px;line-height:1.55;color:var(--slate);margin:0;}
+  @media(max-width:899px){.process-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:599px){.process-grid{grid-template-columns:1fr;}}
+
+  /* Related services */
+  .related{background:var(--paper);padding:80px 24px;}
+  .related-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;}
+  .related-card{display:block;background:var(--white);border:1px solid var(--line);border-radius:16px;padding:26px 24px;text-decoration:none;transition:transform .22s cubic-bezier(.22,1,.36,1),box-shadow .22s ease,border-color .22s ease;}
+  .related-card:hover{transform:translateY(-4px);box-shadow:0 18px 34px -22px rgba(59,23,104,.3);border-color:var(--violet);}
+  .related-card .tag{font-family:var(--mono);font-size:11px;letter-spacing:.06em;text-transform:uppercase;color:var(--violet);margin:0 0 10px;}
+  .related-card h3{font-family:var(--display);font-weight:700;font-size:17px;color:var(--ink);margin:0 0 8px;}
+  .related-card p{font-family:var(--body);font-size:13.5px;line-height:1.55;color:var(--slate);margin:0;}
+  @media(max-width:899px){.related-grid{grid-template-columns:1fr;}}
+
+  /* FAQ */
+  .faq{background:var(--white);padding:88px 24px;border-top:1px solid var(--line);}
+  .faq-list{max-width:820px;}
+  .faq-item{border-top:1px solid var(--line);padding:20px 0;}
+  .faq-item:last-child{border-bottom:1px solid var(--line);}
+  .faq-item summary{font-family:var(--display);font-weight:700;font-size:16px;color:var(--ink);cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:16px;}
+  .faq-item summary::-webkit-details-marker{display:none;}
+  .faq-item summary::after{content:"+";font-family:var(--mono);font-size:20px;color:var(--violet);flex-shrink:0;transition:transform .2s ease;}
+  .faq-item[open] summary::after{transform:rotate(45deg);}
+  .faq-item p{font-family:var(--body);font-size:14.5px;line-height:1.65;color:var(--slate);margin:14px 0 0;max-width:700px;}
+  .faq-more{margin-top:24px;font-family:var(--body);font-size:14px;}
+  .faq-more a{color:var(--violet-deep);font-weight:700;text-decoration:none;border-bottom:1.5px solid var(--gold);padding-bottom:2px;}
+
+  /* Final CTA */
+  .final-cta{position:relative;background:linear-gradient(150deg,var(--violet) 0%,var(--violet-deep) 100%);padding:88px 24px;text-align:center;overflow:hidden;}
+  .final-cta h2{color:#fff;max-width:620px;margin:0 auto 14px;}
+  .final-cta p{font-family:var(--body);font-size:16px;color:#E7DEFB;max-width:520px;margin:0 auto 32px;}
+  .final-cta .btn-primary{background:#fff;color:var(--violet-deep);}
+  .final-cta .btn-primary:hover{background:var(--gold);color:#fff;}
+  .final-cta .btn-ghost{border-color:#fff;color:#fff;}
+  .final-cta .btn-ghost:hover{background:#fff;color:var(--violet-deep);}
+  .final-cta .cta-row{justify-content:center;margin-bottom:0;}
+
+  footer{background:#150F24;padding:56px 24px 28px;}
+  .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr 1fr;gap:32px;padding-bottom:34px;border-bottom:1px solid #2C2447;max-width:1240px;margin:0 auto;}
+  .footer-brand{display:flex;align-items:center;gap:10px;margin:0 0 14px;}
+  .footer-grid p{font-family:var(--body);font-size:13.5px;color:#A79ECB;line-height:1.6;margin:0;max-width:260px;}
+  .footer-col-title{font-family:var(--mono);font-weight:600;font-size:11px;letter-spacing:.08em;text-transform:uppercase;color:var(--gold);margin:0 0 14px;}
+  .footer-col a{display:block;font-family:var(--body);font-size:13.5px;color:#D6D0EA;text-decoration:none;margin-bottom:10px;}
+  .legal{font-family:var(--body);font-size:12px;color:#6F6690;text-align:center;padding-top:20px;line-height:1.6;max-width:1240px;margin:0 auto;}
+  @media(max-width:899px){.footer-grid{grid-template-columns:1fr 1fr;}}
+  @media(max-width:520px){.footer-grid{grid-template-columns:1fr;}}
+
+  @media (prefers-reduced-motion: reduce){*{animation:none!important;transition:none!important;}}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#main">Skip to content</a>
+
+<header class="site">
+  <div class="wrap nav-row">
+    <a class="brand" href="index.html">
+      <span class="mark">S&amp;B</span>
+      <span class="word">S&amp;B Facility Solutions<small>Cleaning · Supplies · Property Care</small></span>
+    </a>
+    <nav class="links">
+      <a href="index.html#pillars" class="active">Services</a>
+      <a href="index.html#why">Why S&amp;B</a>
+      <a href="index.html#work">Our Work</a>
+      <a href="index.html#area">Service Area</a>
+      <a href="faq.html">FAQs</a>
+    </nav>
+    <div class="nav-actions">
+      <a href="tel:+10000000000" class="phone-link">[(000) 000-0000]</a>
+      <a href="index.html#contact" class="btn-primary">Get a Free Quote</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+  <div class="mobile-menu" id="mobileMenu">
+    <a href="index.html#pillars">Services</a>
+    <a href="index.html#why">Why S&amp;B</a>
+    <a href="index.html#work">Our Work</a>
+    <a href="index.html#area">Service Area</a>
+    <a href="faq.html">FAQs</a>
+    <a href="index.html#contact">Get a Free Quote</a>
+  </div>
+</header>
+
+<main id="main">
+  <section class="hero">
+    <div class="hero-grid">
+      <div class="reveal hero-copy">
+        <p class="eyebrow">Commercial Cleaning · Office Service</p>
+        <h1>Office cleaning that keeps the workplace ready, not just tidy.</h1>
+        <p class="lede">S&amp;B provides recurring and one-time office cleaning built around how your workplace actually runs — and it's the same team that can restock your supplies and handle routine property upkeep, if you want that too.</p>
+        <div class="cta-row">
+          <a href="index.html#contact" class="btn-primary">Request an Office Cleaning Quote</a>
+          <a href="tel:+10000000000" class="btn-ghost">Call [(000) 000-0000]</a>
+        </div>
+        <div class="trust-strip">
+          <span>Recurring or One-Time</span>
+          <span>After-Hours Available</span>
+          <span>Custom Scope</span>
+          <span>Licensed &amp; Insured</span>
+        </div>
+      </div>
+      <div class="reveal ph hero-photo" style="transition-delay:120ms;"><span>[Photo — Office Cleaning in Progress]</span></div>
+    </div>
+  </section>
+
+  <section class="intro">
+    <div class="wrap intro-grid">
+      <div class="reveal intro-copy">
+        <p class="eyebrow">Built Around Your Workplace</p>
+        <h2 class="h2">A cleaning plan shaped by your office, not a generic checklist.</h2>
+        <p>Employee schedules, visitor traffic, restroom count, flooring, breakrooms, and access all affect what a good office cleaning plan looks like. We walk the space first and build the scope around it, instead of quoting a package that was written for someone else's office.</p>
+        <p>The proposal spells out exactly what's included, how often, and who's responsible for what — so there's nothing to guess at once service starts.</p>
+        <ul>
+          <li>Scope based on your actual layout and traffic</li>
+          <li>Clear frequency, tasks, and access terms in writing</li>
+          <li>Adjustable as your workplace or headcount changes</li>
+        </ul>
+      </div>
+      <div class="reveal ph intro-photo" style="transition-delay:100ms;"><span>[Photo — Reception Area After Cleaning]</span></div>
+    </div>
+  </section>
+
+  <section class="included">
+    <div class="wrap">
+      <div class="reveal section-head">
+        <p class="eyebrow">Scope of Service</p>
+        <h2 class="h2">What an office cleaning visit can cover.</h2>
+      </div>
+      <div class="included-grid">
+        <div class="included-card reveal">
+          <span class="num">01</span>
+          <h3>Work Areas &amp; Private Offices</h3>
+          <ul>
+            <li>Dusting accessible surfaces and ledges</li>
+            <li>Trash removal and liner replacement</li>
+            <li>Vacuuming, sweeping, and mopping</li>
+            <li>Doors, handles, and shared-touchpoint cleaning</li>
+          </ul>
+        </div>
+        <div class="included-card reveal" style="transition-delay:90ms;">
+          <span class="num">02</span>
+          <h3>Restrooms</h3>
+          <ul>
+            <li>Toilets, urinals, sinks, and counters</li>
+            <li>Mirrors and fixtures</li>
+            <li>Floor cleaning and high-touch surfaces</li>
+            <li>Restocking, when supplies are part of your plan</li>
+          </ul>
+        </div>
+        <div class="included-card reveal" style="transition-delay:180ms;">
+          <span class="num">03</span>
+          <h3>Breakrooms &amp; Shared Spaces</h3>
+          <ul>
+            <li>Countertop and table wipe-downs</li>
+            <li>Appliance exteriors and sinks</li>
+            <li>Trash removal and floor cleaning</li>
+            <li>Common touchpoints and shared surfaces</li>
+          </ul>
+        </div>
+        <div class="included-card reveal" style="transition-delay:270ms;">
+          <span class="num">04</span>
+          <h3>Reception &amp; Client-Facing Areas</h3>
+          <ul>
+            <li>Reception desk and waiting-area cleaning</li>
+            <li>Conference table and surface dusting</li>
+            <li>Interior entry glass and door touch-up</li>
+            <li>Extra attention where visitors see it first</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="bundle reveal">
+        <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 8 12 3 3 8l9 5 9-5Z"/><path d="M3 8v8l9 5 9-5V8"/><path d="M12 13v8"/></svg></div>
+        <div>
+          <h3>Add supply restocking to the same visit</h3>
+          <p>Paper goods, soap, and liners can be tracked and restocked by the same team that cleans your office — one fewer thing for your staff to notice running low.</p>
+        </div>
+        <a href="index.html#pillars" class="btn-ghost" style="border-color:#fff;color:#fff;">See Supplies →</a>
+      </div>
+    </div>
+  </section>
+
+  <section class="frequency">
+    <div class="wrap">
+      <div class="reveal section-head">
+        <p class="eyebrow">Scheduling</p>
+        <h2 class="h2">Frequency built around how busy the space is.</h2>
+      </div>
+      <div class="freq-grid">
+        <div class="freq-card reveal"><h4>Nightly / 5x Weekly</h4><p>Busy offices, medical or professional facilities, and multi-tenant workplaces with heavy restroom and breakroom use.</p></div>
+        <div class="freq-card reveal" style="transition-delay:60ms;"><h4>3x Per Week</h4><p>Active workplaces that need consistent upkeep without service every single business day.</p></div>
+        <div class="freq-card reveal" style="transition-delay:120ms;"><h4>2x Per Week</h4><p>Moderate-traffic offices where restrooms, floors, and shared spaces still need dependable attention.</p></div>
+        <div class="freq-card reveal" style="transition-delay:180ms;"><h4>Weekly</h4><p>A common fit for smaller offices or lower-traffic workplaces with limited staff and visitors.</p></div>
+        <div class="freq-card reveal" style="transition-delay:240ms;"><h4>Biweekly</h4><p>Works when onsite staff handle basic upkeep between professional cleaning visits.</p></div>
+        <div class="freq-card reveal" style="transition-delay:300ms;"><h4>One-Time / Deep Clean</h4><p>No recurring contract required — useful for resets, relocations, management transitions, or a space that just needs extra attention once.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="served">
+    <div class="wrap">
+      <div class="reveal section-head">
+        <p class="eyebrow">Workplaces We Support</p>
+        <h2 class="h2">Different offices, scoped differently.</h2>
+      </div>
+      <div class="served-grid">
+        <div class="served-item reveal"><h4>Professional Offices</h4><p>Accounting, legal, real estate, insurance, and consulting spaces.</p></div>
+        <div class="served-item reveal" style="transition-delay:60ms;"><h4>Medical &amp; Dental Offices</h4><p>Reception, administrative, and non-clinical area cleaning.</p></div>
+        <div class="served-item reveal" style="transition-delay:120ms;"><h4>Corporate &amp; Regional Offices</h4><p>Larger workplaces with departments, meeting rooms, and common areas.</p></div>
+        <div class="served-item reveal" style="transition-delay:180ms;"><h4>Property Management Offices</h4><p>Leasing offices, management suites, and administrative workspace.</p></div>
+        <div class="served-item reveal" style="transition-delay:240ms;"><h4>Nonprofits &amp; Community Groups</h4><p>Flexible plans for offices and meeting spaces with changing schedules.</p></div>
+        <div class="served-item reveal" style="transition-delay:300ms;"><h4>Warehouse Office Areas</h4><p>Administrative spaces attached to warehouses or distribution sites.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="process">
+    <div class="wrap">
+      <div class="reveal section-head">
+        <p class="eyebrow">Getting Started</p>
+        <h2 class="h2">From first call to scheduled service.</h2>
+      </div>
+      <div class="process-grid">
+        <div class="step reveal"><span class="num">01</span><h4>Scope Review</h4><p>We look at office size, flooring, restrooms, schedule, and access.</p></div>
+        <div class="step reveal" style="transition-delay:80ms;"><span class="num">02</span><h4>Cleaning Plan</h4><p>The proposal defines tasks, frequency, supplies, and responsibilities.</p></div>
+        <div class="step reveal" style="transition-delay:160ms;"><span class="num">03</span><h4>Scheduled Service</h4><p>Cleaning happens on the approved schedule and scope.</p></div>
+        <div class="step reveal" style="transition-delay:240ms;"><span class="num">04</span><h4>Ongoing Check-ins</h4><p>We adjust as headcount, layout, or priorities change.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="related">
+    <div class="wrap">
+      <div class="reveal section-head">
+        <p class="eyebrow">Related Services</p>
+        <h2 class="h2">Often paired with office cleaning.</h2>
+      </div>
+      <div class="related-grid">
+        <a class="related-card reveal" href="index.html#pillars">
+          <p class="tag">Facility Supplies</p>
+          <h3>Restocking Under the Same Account</h3>
+          <p>Keep paper goods, soap, and liners stocked without adding a second vendor.</p>
+        </a>
+        <a class="related-card reveal" href="index.html#pillars" style="transition-delay:90ms;">
+          <p class="tag">Property Care</p>
+          <h3>Routine Facility Rounds</h3>
+          <p>Catch small maintenance issues in common areas before they become complaints.</p>
+        </a>
+        <a class="related-card reveal" href="faq.html" style="transition-delay:180ms;">
+          <p class="tag">Resources</p>
+          <h3>Full FAQ Library</h3>
+          <p>Browse every question we get about cleaning, supplies, and property care.</p>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq">
+    <div class="wrap">
+      <div class="reveal section-head">
+        <p class="eyebrow">Office Cleaning Questions</p>
+        <h2 class="h2">Common questions about recurring office service.</h2>
+      </div>
+      <div class="faq-list reveal">
+        <details class="faq-item" open>
+          <summary>What's actually included in office cleaning?</summary>
+          <p>Trash removal, dusting, vacuuming, mopping, restroom cleaning, breakroom cleaning, and reception/conference area cleaning are common — but the exact list is set in your proposal, based on a walkthrough of your specific space.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How often should our office be cleaned?</summary>
+          <p>It depends on staff size, visitor traffic, restrooms, and how the space is used. Busy offices often need service several times a week; smaller or quieter offices are frequently fine weekly or biweekly.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can you clean before or after business hours?</summary>
+          <p>Yes. Evening, early-morning, and weekend cleaning are all common, depending on your access procedures and security requirements.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Do you bring your own supplies and equipment?</summary>
+          <p>Yes, for cleaning service the standard products and equipment are included. If your facility needs specific approved chemicals, that's noted in the proposal.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Can you also restock our restroom and breakroom supplies?</summary>
+          <p>Yes — that's our Facility Supplies service, and it can run on the same schedule and account as your cleaning, so restocking isn't a separate vendor to manage.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is a long-term contract required?</summary>
+          <p>No. One-time and project-based office cleaning is available without an ongoing agreement, alongside recurring plans for offices that want consistent scheduled service.</p>
+        </details>
+      </div>
+      <p class="faq-more">Looking for something else? <a href="faq.html">Browse the full FAQ page →</a></p>
+    </div>
+  </section>
+
+  <section class="final-cta" id="contact">
+    <div class="reveal">
+      <p class="eyebrow" style="justify-content:center;color:#fff;">Ready When You Are</p>
+      <h2 class="h2">Let's build a cleaning plan around your office.</h2>
+      <p>Tell us your office size, current schedule, and what's not working. We'll follow up with a straightforward proposal.</p>
+      <div class="cta-row">
+        <a href="index.html#contact" class="btn-primary">Request an Office Cleaning Quote</a>
+        <a href="tel:+10000000000" class="btn-ghost">Call [(000) 000-0000]</a>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <div class="footer-grid">
+    <div>
+      <div class="footer-brand">
+        <span class="mark">S&amp;B</span>
+        <span class="word" style="font-family:var(--display);font-weight:800;font-size:17px;color:#fff;">S&amp;B Facility Solutions</span>
+      </div>
+      <p>Commercial cleaning, facility supplies, and property care under one contract, for properties that can't afford gaps in service.</p>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Services</p>
+      <a href="index.html#pillars">Commercial Cleaning</a>
+      <a href="index.html#pillars">Facility Supplies</a>
+      <a href="index.html#pillars">Property Care</a>
+    </div>
+    <div class="footer-col">
+      <p class="footer-col-title">Company</p>
+      <a href="index.html#why">Why S&amp;B</a>
+      <a href="index.html#work">Our Work</a>
+      <a href="index.html#area">Service Area</a>
+      <a href="faq.html">FAQs</a>
+    </div>
+    <div>
+      <p class="footer-col-title">Contact</p>
+      <p>[phone placeholder]<br>[email placeholder]<br>Clermont · Winter Garden · Minneola · Ocoee</p>
+    </div>
+  </div>
+  <p class="legal">© [Year] S&amp;B Facility Solutions. All rights reserved. · Cleaning · Supplies · Property Care</p>
+</footer>
+
+<script>
+  const toggle = document.getElementById('menuToggle');
+  const menu = document.getElementById('mobileMenu');
+  toggle.addEventListener('click', () => {
+    const open = menu.classList.toggle('open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  menu.querySelectorAll('a').forEach(a => a.addEventListener('click', () => menu.classList.remove('open')));
+
+  const io = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } });
+  }, { threshold: 0.14 });
+  document.querySelectorAll('.reveal').forEach(el => io.observe(el));
+</script>
+</body>
+</html>
